@@ -14,13 +14,9 @@ Links do projeto:
 -   Frontend: [Repositório](github.com/marcoandre/pi-frontend) e [Publicação](https://pi-frontend.herokuapp.com/)
 
 # 1. Desenvolvimento
-
+terão quatro tipos de livros romance,suspense,ação e 
 **Gerenciamento de vendas para uma livraria**
-
-O nosso cliente, Sr. Genival, tem uma padaria de bairro chamada padaria Pão Genial e, devido a qualidade de seus produtos, ela está crescendo rapidamente. Recentemente, ele contratou mais funcionários para atendimento, caixa, panificação, etc.
-Assim, atualmente, ele consegue concentrar seus esforços para melhorar a gestão da padaria. Para isso, ele quer instalar um sistema de controle de vendas que permita ao caixa lançar as vendas realizadas. Como sua intenção
-é melhorar a gestão do negócio, é muito importante que ele consiga ter
-relatórios, como por exemplo, de vendas.
+o gerenciamnto tera cadastro,endereço,site,aba de pesquisa
 
 # 2. Situação Problema
 
