@@ -16,11 +16,10 @@ Links do projeto:
 # 1. Desenvolvimento
 terão quatro tipos de livros romance,suspense,ação e comédia 
 **Gerenciamento de vendas para uma livraria**
-o gerenciamnto tera cadastro,endereço,site,aba de pesquisa
 
 # 2. Situação Problema
+  cadastro,endereço,site,aba de pesquisa, carrinho, pagamento 
 
-*(Nessa parte a equipe deve descrever a situação problema que será resolvida pelo sistema. O texto abaixo descreve o que essa etapa deve conter e pode ser apagado depois.)*
 
 ![Ciclo da Venda](docs/ciclo_da_venda.webp "Ciclo da Venda")
 
