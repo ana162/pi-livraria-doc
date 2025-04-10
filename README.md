@@ -14,7 +14,7 @@ Links do projeto:
 -   Frontend: [Repositório](github.com/marcoandre/pi-frontend) e [Publicação](https://pi-frontend.herokuapp.com/)
 
 # 1. Desenvolvimento
-terão quatro tipos de livros romance,suspense,ação e 
+terão quatro tipos de livros romance,suspense,ação e comédia 
 **Gerenciamento de vendas para uma livraria**
 o gerenciamnto tera cadastro,endereço,site,aba de pesquisa
 
