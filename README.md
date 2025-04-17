@@ -22,7 +22,7 @@ terão quatro tipos de livros romance,suspense,ação e comédia
 
 
 ![Ciclo da Venda](docs/ciclo_da_venda.webp "Ciclo da Venda")
-
+o cliente escolhe o produto,coloca no carrinho,paga e leva o produto
 Descrevem o que acontece atualmente na empresa em um contexto global,
 abordando o funcionamento da empresa como um todo, não apenas os “problemas” que lá ocorrem.
 
