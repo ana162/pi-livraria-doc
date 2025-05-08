@@ -26,8 +26,8 @@ o cliente escolhe o produto,coloca no carrinho,paga e leva o produto
 
 Seguindo essas dicas, você deve ser capaz de descrever o dia-a-dia da empresa selecionada. E para ajudar na organização do texto, indicamos uma abordagem em 3 etapas:
 
--   **Introdução**: comece com um parágrafo apresentando a empresa (livraria da ana, vendas de livros, das 08h  as 18h tempo de existência, o dono, funcionários, etc);
--   **Situação-problema**:  Aborde em detalhes como a empresa funciona, procurando seguir uma ordem lógica dos acontecimentos e organizando parágrafos diferentes para cada coisa diferente que for explicar (como faria em uma redação);
+-   **Introdução**:  (livraria da ana, vendas de livros, das 08h  as 18h, o dono, funcionários, etc);
+-   **Situação-problema**: a livraria tera  varios tipos de livros,tera um sistema informatizado para facilitar as compras dos livros
 -   **Conclusão**: tenha um parágrafo de conclusão focando nos problemas que você notou dentro da situação problema analisada e aponte brevemente como um software poderia ajudar a resolvê-los.
 
 # 3. Descrição da proposta
