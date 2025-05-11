@@ -32,7 +32,7 @@ Seguindo essas dicas, você deve ser capaz de descrever o dia-a-dia da empresa s
 Gestão de Estoque:
 Perda de controle sobre os livros em estoque, dificuldade em identificar os mais vendidos, e atrasos na reabastecimento, levando a falta de produtos e insatisfação dos clientes.
 Controle de Vendas:
-Dificuldade em analisar as vendas por livro, por categoria ou por período, impedindo a identificação de tendências e a tomada de decisões estratégicas para aumentar a rentabilidade.  tenha um parágrafo de conclusão focando nos problemas que você notou dentro da situação problema analisada e aponte brevemente como um software poderia ajudar a resolvê-los.
+Dificuldade em analisar as vendas por livro, por categoria ou por período, impedindo a identificação de tendências e a tomada de decisões estratégicas para aumentar a rentabilidade.
 
 # 3. Descrição da proposta
 
