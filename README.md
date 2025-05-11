@@ -28,11 +28,7 @@ Seguindo essas dicas, você deve ser capaz de descrever o dia-a-dia da empresa s
 
 -   **Introdução**:  (livraria da ana, vendas de livros, das 08h  as 18h, o dono, funcionários, etc);
 -   **Situação-problema**: a livraria tera  varios tipos de livros,tera um sistema informatizado para facilitar as compras dos livros
--   **Conclusão**:A falta de um sistema de gestão adequado na livraria resultou em dificuldades como: 
-Gestão de Estoque:
-Perda de controle sobre os livros em estoque, dificuldade em identificar os mais vendidos, e atrasos na reabastecimento, levando a falta de produtos e insatisfação dos clientes.
-Controle de Vendas:
-Dificuldade em analisar as vendas por livro, por categoria ou por período, impedindo a identificação de tendências e a tomada de decisões estratégicas para aumentar a rentabilidade.
+-   **Conclusão**:A falta de um sistema de gestão adequado na livraria resultou em dificuldades como: Gestão de Estoque: Perda de controle sobre os livros em estoque, dificuldade em identificar os mais vendidos, e atrasos na reabastecimento, levando a falta de produtos e insatisfação dos clientes.Controle de Vendas: Dificuldade em analisar as vendas por livro, por categoria ou por período, impedindo a identificação de tendências e a tomada de decisões estratégicas para aumentar a rentabilidade.
 
 # 3. Descrição da proposta
 
