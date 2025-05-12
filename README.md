@@ -31,17 +31,14 @@ Seguindo essas dicas, você deve ser capaz de descrever o dia-a-dia da empresa s
 -   **Conclusão**:A falta de um sistema de gestão adequado na livraria resultou em dificuldades como: Gestão de Estoque: Perda de controle sobre os livros em estoque, dificuldade em identificar os mais vendidos, e atrasos na reabastecimento, levando a falta de produtos e insatisfação dos clientes.Controle de Vendas: Dificuldade em analisar as vendas por livro, por categoria ou por período, impedindo a identificação de tendências e a tomada de decisões estratégicas para aumentar a rentabilidade.
 
 # 3. Descrição da proposta
-
-Após entender o problema, proponha uma solução que será útil nos aspectos de dificuldade encontrados. Assim, aqui você deverá **explicar de maneira resumida, e preferencialmente mais textual, como o software funcionará**. Pense nesse texto como uma **introdução ao seu cliente** do que você pretende fazer por ele, para que ele confirme se realmente está dentro do desejado e permita sua continuidade.
-
+A solução proposta é um software de gestão que visa automatizar e simplificar processos, como a gestão de recursos, o controle de estoque e a comunicação interna.O foco é facilitar o trabalho dos funcionários, otimizar o tempo e melhorar a eficiência geral da empresa, especialmente nas áreas de maior dificuldade identificadas.
 **Alguns pontos importantes a se destacar são:**
 
 -   **Qual o foco de ação do software** relacionado com os problemas levantados na análise da situação-problema. O que realmente o software vai fazer. Por exemplo, o foco de ação do Gmail é permitir o envio e recebimento de e-mails.
--   **Os níveis de usuário do sistema**. Somente o gestor tem acesso? E os funcionários? Talvez seja para ambos, ou para funcionários de cargos
-    diferentes, etc.
--   **O que poderá ser feito no software**.Apenas o principal, sem pensar em telas ou detalhes específicos, pois isso será feito em outro momento.
--   **Se houver mais de um nível de usuário**, ressaltar as diferenças entre eles na descrição da proposta.
-
+-   **Os níveis de usuário do sistema**.Em uma livraria, os níveis de usuário do sistema podem variar dependendo das funções de cada funcionário. O gestor (ou administrador) geralmente tem acesso total, enquanto funcionários com               diferentes cargos podem ter acesso restrito a funcionalidades específicas, como consulta de produtos, gestão de estoque, ou atendimento ao cliente.
+-   **O que poderá ser feito no software**.No software principal de uma livraria, poderíamos ter funcionalidades para gerir o catálogo de livros, realizar vendas e gerir os clientes.
+-   **Se houver mais de um nível de usuário**,Se uma livraria tiver diferentes níveis de usuário (ex: clientes regulares, membros, parceiros), a descrição da proposta deve ressaltar as diferenças entre eles, especificando os benefícios e     privilégios de cada nível.  É crucial destacar como cada nível contribui para a comunidade e como a livraria se beneficia da presença de cada tipo de usuário.
+-   
 Tenha em mente que essa é uma etapa relativamente breve. Não é necessário um texto gigantesco, apenas dar uma noção do funcionamento do sistema. Mais adiante
 precisaremos ser bem detalhistas, todavia agora a intenção é apenas fazer algo que permita ao cliente nos dizer se estamos no caminho certo.
 
