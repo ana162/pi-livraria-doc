@@ -15,7 +15,6 @@ Links do projeto:
 
 # 1. Desenvolvimento
 terão quatro tipos de livros romance,suspense,ação e comédia 
-
 **Gerenciamento de vendas para uma livraria**
 
 # 2. Situação Problema
