@@ -43,12 +43,7 @@ Tenha em mente que essa é uma etapa relativamente breve. Não é necessário um
 precisaremos ser bem detalhistas, todavia agora a intenção é apenas fazer algo que permita ao cliente nos dizer se estamos no caminho certo.
 
 # 4. Modelagem de Dados
-
-(*Nessa parte a equipe deve descrever a modelagem de dados que será implementada no sistema. O texto abaixo descreve o que essa etapa deve conter e pode ser apagado depois.*)
-
-Defina as entidades e relacionamentos que farão parte do sistema. Desenhe o diagrama de entidade-relacionamento (DER) e descreva as entidades e relacionamentos que farão parte do sistema.
-
-
+A modelagem de dados para uma livraria, em termos de entidades e relacionamentos, envolve identificar elementos como livros, autores, categorias, clientes, pedidos, e formas de pagamento, além de seus atributos e como se relacionam.
 
 # 4. Regras de negócio
 (*Nessa parte a equipe deve descrever as regras de negócio que serão implementadas no sistema. O texto abaixo descreve o que essa etapa deve conter e pode ser apagado depois.*)
