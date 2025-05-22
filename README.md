@@ -46,31 +46,30 @@ precisaremos ser bem detalhistas, todavia agora a intenção é apenas fazer alg
 A modelagem de dados para uma livraria, em termos de entidades e relacionamentos, envolve identificar elementos como livros, autores, categorias, clientes, pedidos, e formas de pagamento, além de seus atributos e como se relacionam.
 
 # 4. Regras de negócio
-(*Nessa parte a equipe deve descrever as regras de negócio que serão implementadas no sistema. O texto abaixo descreve o que essa etapa deve conter e pode ser apagado depois.*)
-
-As **Regras de negócio** são orientações e restrições que ajudam a regular as operações de uma empresa. **Regras** foram criadas para **colaborar com o funcionamento**, seja da sociedade, de uma escola, de um jogo, etc. Não seria diferente nas organizações. Vamos abordar melhor sobre esse assunto. Entender o que são as regras de negócio, sua importância, como são aplicadas e
-automatizadas na gestão por processo.
+A regra pode definir o mínimo de estoque de cada livro, garantindo que a loja não fique sem produtos populares.
+Outra regra pode especificar o tempo máximo para um livro ficar em estoque antes de ser considerado para baixa ou promoção.
+A regra pode detalhar como os livros devem ser armazenados e organizados para facilitar a identificação e o acesso.
 
 **4.1 O que são regras de negócio?**
 
-Um negócio funciona por processos que, por sua vez, são formados por atividades relacionadas entre si.
-
-As funções das áreas de compras, estoque, logística, finanças, vendas e marketing, por exemplo, compõem um processo de fornecimento de um produto ao cliente.
-
-Dentro desses processos, existem regras que devem ser seguidas durante a execução das atividades, que ajudam a definir **COMO** as operações devem ser realizadas e gerenciadas, **POR QUEM**, **QUANDO**, **ONDE** e **POR QUÊ**.
-
-Podemos dizer que as regras de negócio são **limites impostos às operações**, de forma que elas sigam corretamente em direção às políticas e aos objetivos da instituição.
-
+Gestão de estoque:
+como a livraria calcula o estoque, quando os livros são reabastecidos, e como são identificados os livros de baixa rotatividade.
+Processo de vendas:
+como os livros são vendidos, se há descontos, como são processadas as devoluções.
+Atendimento ao cliente:
+como a livraria lida com reclamações e sugestões, como são geridos os dados dos clientes.
+Parcerias e fornecedores:
+como a livraria escolhe seus fornecedores, como são negociadas as condições de pagamento e frete.
 **4.2 Regras para a criação de regras de negócio**
-
+Definindo Regras de Negócio para uma Livraria:
+1. Identifique as áreas de negócio:
+Comece identificando as áreas principais de operação da livraria, como vendas, estoque, atendimento ao cliente, etc. 
+2. Defina as regras para cada área:
+Para cada área, estabeleça as regras que devem ser seguidas para garantir a eficiência e conformidade com os objetivos da livraria. 
+3. Documente as regras:
+As regras devem ser documentadas de forma clara e concisa, usando uma linguagem acessível para todos os envolvidos. 
 De maneira geral, as regras de negócio devem:
-- Ser **simples**, isto é,  ter apenas uma função.
-- Ser **completas**, com início, meio e fim.
-- Ser possíveis de **mensurar** e **rastrear**.
-- Estar em consonância com a **legislação**.
-- Estar **atualizadas** e sempre **revisadas**.
-- Refletir a **política** e os **valores** da organização.
-- Ser **inteligíveis** para os colaboradores e envolvidos no processo.
+
 
 **4.3 Por que ter regras de negócio?**
 
