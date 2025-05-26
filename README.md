@@ -160,9 +160,9 @@ Cada requisito funcional precisa ser:
 
 **5.4 Estrutura do requisito funcional**
 
-Um requisito funcional, no contexto de uma livraria, deve ser estruturado de forma clara e detalhada, especificando o que o sistema deve fazer para atender às necessidades dos usuários
+  Um requisito funcional, no contexto de uma livraria, deve ser estruturado de forma clara e detalhada, especificando o que o sistema deve fazer para atender às necessidades dos usuários
 
-- **Nome do requisito funcional:**funcional: Uma descrição concisa e específica do que o sistema deve realizar (ex: "Sistema deve permitir que o usuário faça uma compra online").
+  - **Nome do requisito funcional:**funcional: Uma descrição concisa e específica do que o sistema deve realizar (ex: "Sistema deve permitir que o usuário faça uma compra online").
   - **Dados necessários:** Os dados (e o seu formato) que o sistema precisa para executar a função (ex: "Nome do livro, preço, quantidade, endereço de entrega, método de pagamento").
   - **Usuários:**  Os tipos de usuários que podem utilizar a função (ex: "Todos os usuários da livraria").
 **5.4.1 Nome do requisito funcional**
