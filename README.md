@@ -73,30 +73,30 @@ De maneira geral, as regras de negócio devem:
 
 **4.3 Por que ter regras de negócio?**
 
-- **Padronização de processos:** padronizam os processos e auxiliam a fluirem de forma mais eficiente e automatizada.
-- **Controle de processos:** auxiliam no controle de processos, pois falhas são identificadas e corrigidas mais rapidamente.
-- **Tomada de decisão:** auxiliam na tomada de decisão e no cumprimento de estratégias pré-estabelecidas.
-
+- **Padronização de processos:** As regras de negócio padronizam as atividades da livraria, como o processo de venda, estoque, cadastro de produtos, entre outros. Isso garante que todos os funcionários sigam o mesmo padrão, otimizando o     tempo e os recursos, e reduzindo erros e falhas. 
+- **Controle de processos:** As regras de negócio facilitam o controle dos processos, pois permitem identificar e corrigir rapidamente qualquer desvio do padrão estabelecido. Por exemplo, se um cliente efetua uma compra online com um desconto não autorizado, a regra de negócio pode identificar e alertar a equipe para correção imediata. 
+- **Tomada de decisão:**: As regras de negócio auxiliam na tomada de decisões estratégicas, como definir os critérios de desconto, promoções, condições de pagamento, entre outros. Isso garante que as decisões sejam baseadas em dados e critérios objetivos, e que a livraria cumpra suas metas de vendas e lucratividade. 
 **4.4 Exemplos de regras de negócio**
 
-- Em um controle de qualidade de granja, pode-se dizer que a cada 100 ovos impróprios para consumo, o lote será descartado.
-- Em um banco, clientes com faturamento mensal de mais de R$ 25 mil e CPF sem restrições, serão atendidos pelo gerente Premium pessoa física.
-- Para conclusão de licitações, devem ser feitos três orçamentos e o vencedor será sempre o de menor preço final.
-- Em um processo de seleção de RH, o candidato só pode ser aprovado se tiver mais de 5 anos de experiência na área, diploma de pós-graduação, espanhol fluente e pretensão salarial abaixo de R$ 8.000,00.
-- Em um processo de vendas, o vendedor só pode vender um produto se o cliente tiver mais de 18 anos, renda familiar acima de R$ 5.000,00 e não tiver restrições no CPF.
-- Em um processo de compras, o fornecedor só pode ser contratado se tiver nota fiscal, certificado de qualidade e preço abaixo de R$ 10,00 por unidade.
-- Em um processo de logística, o pedido só pode ser enviado se o cliente tiver mais de 18 anos, endereço de entrega no mesmo estado e não tiver restrições no CPF.
-
+Regras de negócio são diretrizes que determinam como uma livraria opera, afetando processos como venda, estoque, atendimento ao cliente e promoções. Exemplos incluem políticas de devolução, critérios de desconto, horários de funcionamento e procedimentos de venda online. 
+Exemplos de Regras de Negócio para uma Livraria:
+Venda e Atendimento:
+Política de Devolução:
+Livros podem ser devolvidos dentro de 7 dias após a compra, se estiverem em perfeito estado e com a embalagem original.
+Descontos:
+Produtos em promoção podem ter descontos de até 20% em relação ao preço original.
+Horário de Funcionamento:
+A livraria funciona de segunda a sábado, das 9h às 18h, e domingos das 10h às 14h.
+Pagamentos:
+Aceitam-se pagamentos em dinheiro, cartão de crédito e débito, além de outras formas de pagamento online.
+Atendimento ao Cliente:
+Os clientes devem ser atendidos de forma educada e profissional, com foco na satisfação do cliente.
+Vendas Online:
+A livraria oferece opções de compra online, com frete grátis para compras acima de R$ 100.
+Entrega:
 **4.5 Como escrever regras de negócio?**
+Para escrever regras de negócio de forma eficiente e organizada, utilize um documento (planilha, documento online, etc.) que inclua campos para: número identificador, nome da regra, datas de criação e última alteração, nomes dos autores das versões, número da versão, identificadores das regras dependentes e uma descrição detalhada da regra. 
 
-- Número identificador.
-- Nome da regra.
-- Data de criação e data da última alteração para comparações e
-controle.
-- Nome dos Autores das versões.
-- Número da versão (1, 2 etc).
-- Dependências: insira o identificador das regras atreladas, às quais a regra em questão depende.
-- Uma descrição detalhada para compreensão da regra.
 
 **4.6 Exemplos de regras de negócio com formatação**
 
@@ -113,7 +113,15 @@ repassar ao cliente para aprovação, e caso o cliente aprovar, a atendente deve
 - **RN09 – Relatório de Fluxo de Caixa:** O relatório de fluxo de caixa será permitido somente para o administrador.
 
 # 5. Requisitos funcionais
-(*Nessa parte a equipe deve descrever os requisitos funcionais que serão implementados no sistema. O texto abaixo descreve o que essa etapa deve conter e pode ser apagado depois.*)
+Os requisitos funcionais de um sistema de livraria descrevem as funcionalidades específicas que o sistema deve oferecer, como cadastro de livros, gestão de estoque, processamento de vendas, etc. Eles especificam o que o sistema deve fazer para atender às necessidades do usuário e do negócio. 
+Exemplos de requisitos funcionais para uma livraria:
+Cadastro e Gestão de Livros:
+O sistema deve permitir o cadastro de novos livros, com informações como título, autor, ISBN, preço, descrição, imagem, etc.
+O sistema deve permitir a edição e atualização de informações dos livros cadastrados.
+O sistema deve permitir a exclusão de livros do catálogo.
+O sistema deve permitir a busca por livros, por diferentes critérios (título, autor, ISBN, etc.).
+O sistema deve permitir a visualização detalhada das informações de cada livro.
+
 
 **5.1 O que são requisitos funcionais?**
 
@@ -143,31 +151,28 @@ Os requisitos funcionais podem ser classificados em:
 
 Cada requisito funcional precisa ser:
 
-- **Específico** sobre o que o sistema deve fazer.
-- **Mensurável** para que você possa dizer se o sistema está fazendo isso
-- **Alcançável** dentro do prazo que você definiu
-- **Relevante** para seus objetivos de negócios
-- **Limitado** no tempo para que você possa
-acompanhar o progresso
+- **Específico** Descreva precisamente o que o sistema deve fazer, evitando ambiguidade. Por exemplo, "O sistema deve permitir que o usuário cadastre um novo produto com nome, descrição, preço e quantidade em estoque".
+- **Mensurável** Defina como será possível verificar se o requisito foi cumprido. Use métricas ou critérios de sucesso claros. Por exemplo, "O sistema deve ser capaz de cadastrar um novo produto em até 30 segundos".
+- **Alcançável**Certifique-se de que o requisito possa ser implementado dentro do escopo e recursos disponíveis. Use ferramentas de gestão de projeto para acompanhar o progresso e identificar possíveis problemas.
+- **Relevante**Garanta que o requisito esteja alinhado com os objetivos de negócio e as necessidades dos usuários. Por exemplo, "O sistema deve permitir que o usuário visualize a lista de produtos com a opção de filtrar por categoria".
+- **Limitado**Estabeleça um prazo para a conclusão do requisito. Isso ajuda a manter o foco e a garantir que o projeto avance de forma eficiente. Por exemplo, "O requisito deve ser implementado e testado até o dia 31 de dezembro". 
+
 
 **5.4 Estrutura do requisito funcional**
 
-Um requisito funcional deve ser estruturado da seguinte forma:
+Um requisito funcional, no contexto de uma livraria, deve ser estruturado de forma clara e detalhada, especificando o que o sistema deve fazer para atender às necessidades dos usuários
 
-- **Nome do requisito funcional:** descrição do
-requisito.
-  - **Dados necessários:** dado 1, dado 2, dado 3.
-  - **Usuários:** todos os níveis de usuário.
-
+- **Nome do requisito funcional:**funcional: Uma descrição concisa e específica do que o sistema deve realizar (ex: "Sistema deve permitir que o usuário faça uma compra online").
+  - **Dados necessários:** Os dados (e o seu formato) que o sistema precisa para executar a função (ex: "Nome do livro, preço, quantidade, endereço de entrega, método de pagamento").
+  - **Usuários:**  Os tipos de usuários que podem utilizar a função (ex: "Todos os usuários da livraria").
 **5.4.1 Nome do requisito funcional**
 
 **R.F. 99 - Nome do requisito funcional:** é o nome da função que o software terá. Sugerimos, por padronização, que tenha o prefixo R.F. (requisito funcional)
 seguida da numeração, para melhor identificação do requisito, acrescido do formato *“Substantivo + onde será feita a ação”*.
 Por exemplo:
 - R.F. 01 - Registro de Funcionários
-- R.F. 15 - Gerenciamento de consultas
-- R.F. 04 - Débito em conta corrente
-
+-R.F. 02 - Cadastro de Produtos
+--R.F. 05 - Cálculo de Salários
 Deixe para definir as numerações ao final, tendo em vista que mudanças podem acontecer e não é prático sempre ficar reajustando os números.
 
 **5.4.2 Descrição do requisito funcional**
