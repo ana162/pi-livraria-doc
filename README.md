@@ -124,15 +124,14 @@ O sistema deve permitir a visualização detalhada das informações de cada liv
 
 
 **5.1 O que são requisitos funcionais?**
-
+Os requisitos funcionais de uma livraria, no contexto de um sistema de gestão ou software, incluem a capacidade de registrar, consultar e gerenciar produtos (livros, revistas, etc.), realizar vendas, processar pagamentos, gerenciar estoque, realizar encomendas, gerar relatórios, entre outros. Também podem incluir recursos como gestão de clientes, sugestão de produtos, e integração com sistemas externos, como plataformas de e-commerce ou sistemas de transporte.
 Um requisito funcional é uma declaração de como um sistema deve se comportar. Define o que o sistema deve fazer para atender às necessidades ou expectativas do usuário. Os requisitos funcionais podem ser pensados ​como recursos que o usuário detecta.
 
 Os requisitos funcionais são compostos de duas partes:
 **função** e **comportamento**.
 
-- A **função** é o que o sistema **faz**. Por exemplo: *“calcular imposto sobre vendas”*.
-- O **comportamento** é **como** o sistema faz. Por exemplo: *“O sistema deve calcular o imposto sobre vendas multiplicando o preço de compra pela alíquota do imposto.”*.
-
+- A **função**A função descreve o que o sistema deve fazer
+- O **comportamento**  o comportamento descreve como o sistema deve executar essa função. Exemplos de funções: "Registrar uma venda", "Gerenciar o inventário", "Pesquisar livros". Exemplos de comportamentos: "O sistema deve registrar uma venda inserindo informações como livro, quantidade, preço e forma de pagamento", "O sistema deve atualizar o inventário diminuindo a quantidade de livros em estoque quando uma venda é registrada", "O sistema deve permitir a busca de livros por título, autor ou ISBN".
 **5.2 Tipos de requisitos funcionais**
 
 Os requisitos funcionais podem ser classificados em:
@@ -151,20 +150,20 @@ Os requisitos funcionais podem ser classificados em:
 
 Cada requisito funcional precisa ser:
 
-- **Específico** Descreva precisamente o que o sistema deve fazer, evitando ambiguidade. Por exemplo, "O sistema deve permitir que o usuário cadastre um novo produto com nome, descrição, preço e quantidade em estoque".
-- **Mensurável** Defina como será possível verificar se o requisito foi cumprido. Use métricas ou critérios de sucesso claros. Por exemplo, "O sistema deve ser capaz de cadastrar um novo produto em até 30 segundos".
-- **Alcançável**Certifique-se de que o requisito possa ser implementado dentro do escopo e recursos disponíveis. Use ferramentas de gestão de projeto para acompanhar o progresso e identificar possíveis problemas.
-- **Relevante**Garanta que o requisito esteja alinhado com os objetivos de negócio e as necessidades dos usuários. Por exemplo, "O sistema deve permitir que o usuário visualize a lista de produtos com a opção de filtrar por categoria".
-- **Limitado**Estabeleça um prazo para a conclusão do requisito. Isso ajuda a manter o foco e a garantir que o projeto avance de forma eficiente. Por exemplo, "O requisito deve ser implementado e testado até o dia 31 de dezembro". 
+- **Específico** O sistema deve permitir que o usuário cadastre um novo livro com título, autor, editora, ISBN, preço, descrição e quantidade em estoque.
+- **Mensurável** O sistema deve ser capaz de cadastrar um novo livro em até 1 minuto.
+- **Alcançável**O sistema deve ser desenvolvido utilizando tecnologias que sejam adequadas para a infraestrutura da livraria.
+- **Relevante**O sistema deve permitir que o usuário pesquise por livro através do título, autor, editora ou ISBN.
+- **Limitado**O sistema deve estar pronto e em funcionamento até o dia 31 de dezembro. 
 
 
 **5.4 Estrutura do requisito funcional**
 
   Um requisito funcional, no contexto de uma livraria, deve ser estruturado de forma clara e detalhada, especificando o que o sistema deve fazer para atender às necessidades dos usuários
 
-  - **Nome do requisito funcional:**funcional: Uma descrição concisa e específica do que o sistema deve realizar (ex: "Sistema deve permitir que o usuário faça uma compra online").
-  - **Dados necessários:** Os dados (e o seu formato) que o sistema precisa para executar a função (ex: "Nome do livro, preço, quantidade, endereço de entrega, método de pagamento").
-  - **Usuários:**  Os tipos de usuários que podem utilizar a função (ex: "Todos os usuários da livraria").
+  - **Nome do requisito funcional:**"Sistema deve permitir que o usuário adicione livros ao carrinho"
+  - **Dados necessários:** ID do livro, quantidade, preço."
+  - **Usuários:**  Todos os usuários cadastrados e não cadastrados."
 **5.4.1 Nome do requisito funcional**
 
 **R.F. 99 - Nome do requisito funcional:** é o nome da função que o software terá. Sugerimos, por padronização, que tenha o prefixo R.F. (requisito funcional)
@@ -176,16 +175,19 @@ Por exemplo:
 Deixe para definir as numerações ao final, tendo em vista que mudanças podem acontecer e não é prático sempre ficar reajustando os números.
 
 **5.4.2 Descrição do requisito funcional**
+A descrição do requisito funcional deve detalhar a funcionalidade do sistema e o motivo de sua existência, especialmente se não for algo comum na empresa. O requisito deve ser claro sobre o que o sistema faz e por que é necessário para cumprir os objetivos do projeto.
 
-**Descrição do requisito:** local para descrever a função deste requisito.
-
-Sempre se preocupe em esclarecer dois pontos: o que o requisito faz e o motivo de sua existência. Isso é especialmente importante se a ação executada nesse requisito não for algo que já acontece naturalmente na empresa.
-Um exemplo é um Registro de funcionários, que talvez não exista hoje mas para o software é necessário para viabilizar uma autenticação de
-usuários. Outro exemplo é algo que faz sentido apenas para um  software, como a própria autenticação.
+**Descrição do requisito:**
+Um requisito funcional para uma livraria online poderia ser: "O sistema deve permitir que os usuários cadastrem novos produtos, adicionando informações como título, autor, preço, descrição e imagem." O motivo da existência desse requisito é permitir que a livraria possa disponibilizar seu catálogo de livros online para os O que o sistema faz:clientes Define a ação específica que o sistema deve executar (ex: cadastrar produto, realizar pagamento, gerar relatório).
+Por que o sistema faz isso: Explica a necessidade e o objetivo da ação, justificando a sua inclusão no sistema.
 
 **5.4.3 Dados necessários**
+Para gerir uma livraria de forma eficiente, são necessários dados relativos a clientes, livros, editoras e vendas. Estes dados são essenciais para controlar o estoque, gerir as finanças e otimizar as vendas.
 
 **Dados necessários:** aqui devem ser colocados os nomes dos dados que serão usados para que esse requisito atenda o que precisa fazer.
+Clientes:Nome completo,Endereço,Telefone, CPF ou CNPJ, Dados de pagamento, Histórico de compras. Livros:Título, Autor(es), ISBN, Editora, Gênero,Número de páginas,Sinopse,Preço, Quantidade em estoque, Data de publicação,Capa do livro.
+Editoras:Nome,CNPJ, Endereço, Telefone.Vendas:Data da venda, Cliente que efetuou a compra, Livro(s) vendido(s), Preço total da venda, Forma de pagamento,Desconto aplicado (se houver). 
+
 
 Nas **entradas** e **processos**, em geral, são os dados que serão salvos (seja algo digitado pelo usuário ou captado do sistema, como a hora atual).
 
