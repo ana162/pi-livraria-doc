@@ -190,39 +190,83 @@ Editoras:Nome,CNPJ, Endereço, Telefone.Vendas:Data da venda, Cliente que efetuo
 
 
 Nas **entradas** e **processos**, em geral, são os dados que serão salvos (seja algo digitado pelo usuário ou captado do sistema, como a hora atual).
+Título do livro (informado pelo usuário),Autor(es),Editora,Gênero,Ano de publicação,ISBN,Preço,Quantidade em estoque,Data e hora do cadastro (capturada automaticamente pelo sistema).
+Processos:Validação dos campos obrigatórios, Verificação do formato do ISBN, Armazenamento dos dados no banco de dados,Registro da data e hora do cadastro,Verificação se o livro já existe no sistema (pelo ISBN) para evitar duplicidade.
 
-Já nas **saídas**, são os dados que serão exibidos em tela (sejam eles vindos diretamente do banco, ou criados por um cálculo ou busca na sessão do usuário).
+Já nas **saídas**Saídas:Mensagem de confirmação de cadastro bem-sucedido, Exibição dos dados cadastrados,Mensagens de erro em caso de campos inválidos ou duplicidade de ISBN.
 
 **5.4.4 Usuários**
+Administrador,Funcionário da livraria com permissão de cadastro
+
 
 **Usuários:** aqui devem ser colocados os nomes dos usuários que terão acesso a esse requisito, conforme enumerados na descrição do sistema.
+Administrador – tem acesso completo, inclusive a configurações e relatórios.
+Funcionário – realiza cadastros, vendas e consultas.
+Cliente – acessa o catálogo, realiza compras e consulta pedidos.
+Fornecedor – cadastra ofertas e consulta pedidos de reposição (se aplicável).
 
 **5.4.5 Exemplo de requisito funcional**
+1. Cadastro de Livros
+O sistema deve permitir o cadastro de livros com as seguintes informações: título, autor, editora, gênero, ISBN, preço e quantidade em estoque.
+2. Cadastro de Usuários
+O sistema deve permitir que o administrador cadastre novos usuários com seus respectivos perfis (administrador, funcionário, cliente, fornecedor).
+3. Realizar Venda
+O sistema deve permitir que um funcionário ou cliente registre a venda de um ou mais livros, calculando o valor total e atualizando o estoque.
+4. Controle de Estoque
+O sistema deve permitir ao administrador ou funcionário consultar e alterar o estoque de livros.
+5. Consulta de Catálogo
+O sistema deve permitir a pesquisa de livros pelo título, autor, gênero ou ISBN.
 
-- **R.F. 01 - Autenticação de usuário:** tem como propósito autenticar o acesso ao sistema, verificando se o usuário pode acessá-lo e, caso possa, o direcionando
-para a página principal de seu perfil de acesso.
-  - **Dados necessários:** login, senha, nível de permissão.
-  - **Usuários:** todos os níveis de usuário.
+- **R.F. 01 - Autenticação de usuário:** Este requisito tem como objetivo autenticar o acesso ao sistema da livraria. O sistema deve verificar se as credenciais informadas (login e senha) correspondem a um usuário cadastrado e ativo. Em caso de sucesso, o sistema deve redirecionar o usuário para a página principal correspondente ao seu perfil de acesso (ex: administrador, atendente, cliente etc.).
+  - **Dados necessários:** Login (e-mail ou nome de usuário),Senha,
+  - Nível de permissão (cliente, atendente, administrador etc.).
+
+  - **Usuários:**Clientes cadastrados
+  - Atendentes da livraria
+    Administradores do sistema
+
+
 
 **5.4.6 Organização dos requisitos funcionais**
 
 As funcionalidades devem ser organizadas em: entradas, processos e saídas.
 
-**Entradas:** São as funcionalidades que alimentarão o software com as informações essenciais para seu uso.
+**Entradas:** São as funcionalidades que permitem inserir dados no sistema, fornecendo as informações essenciais para seu funcionamento.
+**Exemplos de entradas:**Registro de usuário: cadastro de clientes, atendentes e administradores para permitir o acesso ao sistema.
+Cadastro de livro: inserção de novos títulos no acervo, com dados como título, autor, editora, ISBN, preço e estoque.
+Cadastro de fornecedor: entrada de dados dos fornecedores de livros.
+Cadastro de categorias/genres: classificação dos livros (ex: romance, ficção científica, técnico, etc.).
+Cadastro de pedidos de compra: inserção de dados de novos pedidos realizados por clientes.
 
-**Exemplos de entradas:**
-- “**Registro de usuário**” (para permitir depois seu acesso ao software).
-- “**Registro de paciente**” (que seria útil caso nosso software fosse ppara uma clínica, evitando registrar várias vezes os mesmos dados da pessoa a cada consulta e viabilizando um histórico de seus
-atendimentos).
 
-**Processos:** Em geral, englobam toda ação que executa cálculos, processamentos de tomada de decisão ou transforma dados em novos dados.
+- “**Registro de usuário**permite o cadastro de clientes, atendentes ou administradores no sistema. Esse cadastro é essencial para controle de acesso e para personalizar as funcionalidades       disponíveis conforme o perfil do usuário.
+  Exemplo: Um cliente se cadastra com nome, e-mail, CPF e endereço para poder realizar compras na loja online.
+- “**Registro de paciente** evita a necessidade de inserir os mesmos dados sempre que for feita uma venda ou consulta. Cada livro é registrado com informações como título, autor, editora, ISBN, preço e quantidade em estoque.
+Exemplo: O administrador cadastra o livro "Dom Casmurro" com todas as informações necessárias para que ele esteja disponível no sistema.
 
-**Exemplos de processos:**
+**Processos:** Recibo de compra: comprovante gerado após uma venda, contendo os detalhes da transação.
+Relatório de vendas: exibe as vendas realizadas por período, por livro ou por atendente.
+Relatório de estoque: lista os livros disponíveis, os que estão com baixo estoque ou esgotados.
+Notificação de confirmação de pedido: mensagem enviada ao cliente confirmando a realização do pedido, com status de entrega.
+Painel de controle do administrador: exibe estatísticas e informações gerenciais, como volume de vendas, livros mais vendidos, desempenho por categoria.
+
+**Exemplos de processos:**utenticação de usuário
+Verifica se o login e senha informados são válidos e direciona o usuário para seu painel, conforme o perfil (cliente, atendente, administrador).
+Busca de livros no catálogo
+Permite localizar livros com base em critérios como título, autor, gênero, editora, ISBN, ou palavras-chave.
+Processamento de venda
+Calcula o valor total da compra, aplica descontos, atualiza o estoque e registra a transação.
+Atualização de estoque
+Ajusta automaticamente a quantidade de livros disponíveis após uma venda ou reposição.
 - “**Autenticação de usuário**”, que usará os dados de “**Registro de usuário**” em sua execução.
 - “**Agendamento de consulta**”, que usará dados do “**Registro de paciente**” e talvez do “**Registro de funcionário**” em sua execução.
 
-**Saídas:** São os relatórios, gráficos, impressões, etc., que utilizarem os dados do software para gerar informações pertinentes ao
-negócio, mas sem intenção de alterá-los, apenas permitindo sua visualização e filtragem.
+**Saídas:**Recibo de compra: comprovante gerado após uma venda, contendo os detalhes da transação.
+Relatório de vendas: exibe as vendas realizadas por período, por livro ou por atendente.
+Relatório de estoque: lista os livros disponíveis, os que estão com baixo estoque ou esgotados.
+Notificação de confirmação de pedido: mensagem enviada ao cliente confirmando a realização do pedido, com status de entrega.
+Painel de controle do administrador: exibe estatísticas e informações gerenciais, como volume de vendas, livros mais vendidos, desempenho por categoria.
+
 
 **Exemplos de saídas:**
 - “Relatório de consultas por paciente”.
