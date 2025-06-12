@@ -226,7 +226,6 @@ O sistema deve permitir a pesquisa de livros pelo título, autor, gênero ou ISB
     Administradores do sistema
 
 
-
 **5.4.6 Organização dos requisitos funcionais**
 
 As funcionalidades devem ser organizadas em: entradas, processos e saídas.
@@ -250,7 +249,7 @@ Relatório de estoque: lista os livros disponíveis, os que estão com baixo est
 Notificação de confirmação de pedido: mensagem enviada ao cliente confirmando a realização do pedido, com status de entrega.
 Painel de controle do administrador: exibe estatísticas e informações gerenciais, como volume de vendas, livros mais vendidos, desempenho por categoria.
 
-**Exemplos de processos:**utenticação de usuário
+**Exemplos de processos:**autenticação de usuário
 Verifica se o login e senha informados são válidos e direciona o usuário para seu painel, conforme o perfil (cliente, atendente, administrador).
 Busca de livros no catálogo
 Permite localizar livros com base em critérios como título, autor, gênero, editora, ISBN, ou palavras-chave.
@@ -269,8 +268,8 @@ Painel de controle do administrador: exibe estatísticas e informações gerenci
 
 
 **Exemplos de saídas:**
-- “Relatório de consultas por paciente”.
-- Relatório de vendas”.
+- "Relatório de compras por cliente”
+- " Relatório de vendas”.
 - “Log de usuários autenticados”.
 
 Todos esses podem ser consideradas saídas, pois usam informações de entradas e processos de modo a mostrar informações relevantes ao
@@ -282,34 +281,31 @@ negócio. Lembre-se que, diferentemente das entradas e processos, aqui os dados 
 
 **Entradas:**
 
-- **R.F. 01 - Nome do requisito funcional:** descrição do requisito.
-  - **Dados necessários:** dado 1, dado 2, dado 3.
-  - **Usuários:** todos os níveis de usuário.
+- **R.F. 01 - Nome do requisito funcional:** Cadastro de Usuário: permite que um novo cliente se registre na livraria.
+  - **Dados necessários:**nome completo, e-mail, CPF, endereço, senha.
+  - **Usuários:* cliente.
 
-- **R.F. 02 - Nome do requisito funcional:** descrição do requisito.
-  - **Dados necessários:** dado 1, dado 2, dado 3.
+- **R.F. 02 - Nome do requisito funcional:**- Busca de livros: permite ao usuário pesquisar livros no catálogo da loja.
+  - **Dados necessários:** título, autor, ISBN, palavra-chave, categoria.
   - **Usuários:** todos os níveis de usuário.
 
 **Processamento:**
+- **R.F. 03 - Nome do requisito funcional:** Processar venda: realiza o cálculo do total, aplica descontos, atualiza estoque e registra a compra.
+  - **Dados necessários:**itens do carrinho, forma de pagamento, dados do cliente.
+  - **Usuários:** cliente, atendente.
 
-- **R.F. 03 - Nome do requisito funcional:** descrição do requisito.
-  - **Dados necessários:** dado 1, dado 2, dado 3.
-  - **Usuários:** todos os níveis de usuário.
-
-- **R.F. 04 - Nome do requisito funcional:** descrição do requisito.
-  - **Dados necessários:** dado 1, dado 2, dado 3.
-  - **Usuários:** todos os níveis de usuário.
-
+- **R.F. 04 - Nome do requisito funcional:**  Atualizar estoque: altera automaticamente a quantidade de livros após venda ou reposição.
+  - **Dados necessários:** código do livro, quantidade movimentada, tipo de operação.
+  - **Usuários:**administrador, atendente.
 **Saídas:**
 
-- **R.F. 05 - Nome do requisito funcional:** descrição do requisito.
-  - **Dados necessários:** dado 1, dado 2, dado 3.
-  - **Usuários:** todos os níveis de usuário.
-
-- **R.F. 06 - Nome do requisito funcional:** descrição do requisito.
-  - **Dados necessários:** dado 1, dado 2, dado 3.
-  - **Usuários:** todos os níveis de usuário.
-
+- **R.F. 05 - Nome do requisito funcional:** Gerar recibo de compra: emite um comprovante da transação para o cliente.
+  - **Dados necessários:** dados da compra (livros, valores, data, cliente).
+  - **Usuários:** cliente, atendente.
+  - 
+- **R.F. 06 - Nome do requisito funcional:**  Relatório de vendas: apresenta vendas realizadas por período, por livro ou por atendente.
+  - **Dados necessários:** intervalo de datas, filtros por categoria, atendente ou título.
+  - **Usuários:**administrador.
 # 6. Requisitos não funcionais
 
 Requisitos não funcionais (**RNFs**) são as restrições impostas a um sistema que definem seus atributos de qualidade.
