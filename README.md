@@ -313,32 +313,38 @@ Requisitos não funcionais (**RNFs**) são as restrições impostas a um sistema
 Eles geralmente são indicados por adjetivos como **segurança**, **desempenho** e **escalabilidade**.
 
 **6.1 Categorias de requisitos não funcionais**
-
-Os requisitos não funcionais são importantes porque ajudam a garantir que o sistema atenda às necessidades do usuário.
+Requisitos não funcionais (RNFs) definem as características de qualidade e restrições de um sistema, enquanto os requisitos funcionais descrevem o que o sistema faz. Para uma livraria, RNFs podem incluir critérios de desempenho (como tempo de resposta ao buscar um livro), segurança (proteção de dados do cliente), confiabilidade (disponibilidade do sistema), usabilidade (facilidade de uso da interface) e manutenibilidade (facilidade de atualização). 
 
 Os Requisitos Não Funcionais explicam as limitações e restrições do sistema a ser projetado. **Esses requisitos não têm nenhum
 impacto na funcionalidade do aplicativo.** Além disso, existe uma prática comum de subclassificar os requisitos não funcionais em várias categorias:
+- Interface de Usuário:A facilidade de uso, a intuitividade e a aparência da interface do sistema. 
+- Confiabilidade:A capacidade do sistema de funcionar sem falhas e de forma consistente ao longo do tempo, incluindo a capacidade de recuperação de falhas. 
+- Segurança:A proteção dos dados do usuário e do sistema contra acessos não autorizados e ataques maliciosos. 
+- Atuação: A velocidade e eficiência com que o sistema responde às ações do usuário, incluindo tempo de resposta, taxa de transferência e utilização de recursos. 
+- Manutenção:A facilidade com que o sistema pode ser corrigido, atualizado e mantido. 
 
-- Interface de Usuário
-- Confiabilidade
-- Segurança
-- Atuação
-- Manutenção
 
 Os requisitos não funcionais podem ser divididos em duas categorias:
 
-1. **Atributos de qualidade:** Estas são as características do sistema que determinam sua qualidade geral. Exemplos de atributos de qualidade incluem segurança, desempenho e usabilidade.
-2. **Restrições:** Estas são as limitações impostas ao sistema.
-Exemplos de restrições incluem tempo, recursos e ambiente.
+1. **Atributos de qualidade:** Segurança: A proteção contra ameaças e ataques.
+Desempenho: A eficiência e velocidade do sistema.
+Usabilidade: A facilidade de uso e a experiência do usuário.
+Confiabilidade: A capacidade do sistema de funcionar corretamente e sem falhas.
+Manutenibilidade: A facilidade de atualização e manutenção do sistema. 
+2. **Restrições:** Tempo: O prazo para a entrega do sistema.
+Recursos: Os recursos disponíveis para o desenvolvimento do sistema, como orçamento e pessoal.
+Ambiente: O ambiente em que o sistema será executado.
 
 **6.2 Vantagens dos requisitos não funcionais**
 
 Os requisitos não funcionais ajudam a garantir que o sistema seja:
+1. Adaptado às necessidades do usuário:Requisitos não funcionais, como usabilidade e desempenho, garantem que o sistema seja intuitivo e responsivo, proporcionando uma experiência de compra agradável e eficiente para os clientes da livraria. 
+2. Adequado à finalidade:Requisitos como segurança e confiabilidade garantem que a livraria online opere de forma segura e confiável, protegendo os dados dos clientes e evitando interrupções no serviço. 
+3. Escalável:Um sistema escalável pode lidar com um aumento no número de usuários e transações, o que é essencial para o crescimento de uma livraria online, evitando gargalos e lentidão durante picos de acesso. 
+4. Seguro:A segurança é fundamental para proteger informações sensíveis dos clientes, como dados de cartão de crédito e informações pessoais. Requisitos não funcionais relacionados à segurança garantem que a livraria online esteja protegida contra ataques cibernéticos e fraudes. 
+5. Confiável:A confiabilidade garante que a livraria online funcione sem falhas e que os clientes possam acessar seus serviços e produtos sem interrupções. Isso inclui a capacidade de lidar com falhas e recuperar rapidamente, garantindo a satisfação do cliente. 
+6. Fácil de usar e manter:Requisitos de usabilidade e manutenibilidade garantem que a livraria online seja fácil de usar para os clientes e fácil de manter para os desenvolvedores. Uma interface intuitiva e um código bem estruturado facilitam a navegação e a atualização do sistema. 
 
-1. Adaptado às necessidades do usuário.
-2. Adequado à finalidade.
-3. Escalável, seguro e confiável.
-4. Fácil de usar e manter.
 
 **6.3 Exemplos de requisitos não funcionais**
 
@@ -370,7 +376,6 @@ aplicáveis.
 - **R.N.F. 02 - Nome do requisito não funcional:** descrição do requisito.
 
 **Exemplos de requisitos não funcionais:**
-
 
 **Sistema de Padaria**:
 - **R.N.F. 01 - Navegador homologado:** O sistema deverá ser homologado para os navegadores Google Chrome e Mozilla Firefox.
