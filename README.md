@@ -349,23 +349,24 @@ Os requisitos não funcionais ajudam a garantir que o sistema seja:
 **6.3 Exemplos de requisitos não funcionais**
 
 Aqui estão alguns exemplos de requisitos não funcionais:
-1. **Segurança**: O sistema deve ser protegido contra acesso não
-autorizado.
-2. **Atuação**: O sistema deve ser capaz de lidar com o número necessário
-de usuários sem qualquer degradação no desempenho.
-3. **Escalabilidade**: O sistema deve ser capaz de aumentar ou diminuir
-conforme necessário.
-4. **Disponibilidade**: O sistema deve estar disponível quando necessário.
-5. **Manutenção**: O sistema deve ser fácil de manter e atualizar.
-6. **Portabilidade**: O sistema deve ser capaz de rodar em diferentes
-plataformas com alterações mínimas.
-7. **Confiabilidade**: O sistema deve ser confiável e atender aos requisitos
-do usuário.
-8. **Usabilidade**: O sistema deve ser fácil de usar e entender.
-9. **Compatibilidade**: O sistema deve ser compatível com outros sistemas.
-10. **Conformidade**: O sistema deve cumprir todas as leis e regulamentos
-aplicáveis.
-
+1. **Segurança**:O sistema deve proteger os dados dos clientes (informações pessoais, detalhes de pagamento) contra acesso não autorizado, utilizando criptografia e outras medidas de segurança. 
+A plataforma deve ser resistente a ataques cibernéticos, como injeção de SQL ou ataques DDoS. 
+2. **Atuação**:A página de detalhes de um livro (com sinopse, preço, avaliações e capa) deve ser carregada em até 1,5 segundos.A página de detalhes de um livro (com sinopse, preço, avaliações e capa) deve ser carregada em até 1,5 segundos.
+3. **Escalabilidade**:O sistema deve ser capaz de lidar com picos de tráfego durante promoções ou lançamentos de livros populares.
+O sistema deve permitir a adição de novos livros, categorias e funcionalidades sem afetar o desempenho geral.
+4. **Disponibilidade**:A livraria online deve estar disponível 24 horas por dia, 7 dias por semana, com um tempo de inatividade mínimo (por exemplo, 99,9% de disponibilidade).
+O sistema deve ter mecanismos de backup e recuperação para garantir a continuidade do serviço em caso de falhas. 
+5. **Manutenção**:O sistema deve ser desenvolvido de forma modular, de modo que alterações em um módulo (ex: catálogo de livros) não afetem negativamente outros módulos (ex: carrinho de compras).O sistema deve ser desenvolvido de forma modular, de modo que alterações em um módulo (ex: catálogo de livros) não afetem negativamente outros módulos (ex: carrinho de compras).
+6. **Portabilidade**:O sistema deve ser compatível com diferentes navegadores web (Chrome, Firefox, Safari, etc.) e dispositivos (computadores, tablets, smartphones).
+O sistema deve ser capaz de rodar em diferentes sistemas operacionais (Windows, macOS, Linux) com alterações mínimas.
+7. **Confiabilidade**: O sistema deve ser estável e confiável, com um baixo índice de erros e falhas.
+O sistema deve ser capaz de lidar com erros e exceções de forma elegante, sem interromper a experiência do usuário.
+8. **Usabilidade**: A navegação no site deve ser intuitiva e fácil de usar, permitindo que os usuários encontrem rapidamente o que procuram.
+A interface do usuário deve ser clara e consistente, com botões e menus bem definidos.
+9. **Compatibilidade**O sistema deve ser compatível com outros sistemas, como sistemas de pagamento online, sistemas de gerenciamento de estoque e sistemas de entrega.
+O sistema deve ser capaz de integrar com APIs de terceiros para funcionalidades adicionais (por exemplo, sistemas de recomendação de livros). 
+10. **Conformidade**: O sistema deve cumprir todas as leis e regulamentos aplicáveis, como leis de proteção de dados (LGPD, GDPR) e leis de comércio eletrônico.
+O sistema deve fornecer informações claras sobre termos e condições, política de privacidade e informações de contato.
 **6.4 Exemplo de organização dos requisitos não funcionais**
 
 (_A seguir, um exemplo de organização de requisitos não funcionais._)
