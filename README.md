@@ -410,29 +410,30 @@ Eles ajudam a garantir que o sistema atenda às necessidades do usuário e seja 
 # 7. Diagrama de Caso de Uso
 
 **7.1 Introdução**
-O Diagrama de Caso de Uso é uma ferramenta UML que representa graficamente as interações entre usuários (atores) e o sistema, focando no que o sistema faz do ponto de vista do usuário. Ele descreve as funcionalidades do sistema e como os usuários as utilizam, sem especificar como essas funcionalidades são implementadas. 
+ara uma livraria, um diagrama de caso de uso detalharia as interações entre os usuários (clientes, bibliotecários, etc.) e o sistema, mostrando as funcionalidades como buscar livros, verificar disponibilidade, realizar empréstimos, devolver livros, adicionar livros ao catálogo e remover livros. O diagrama também mostraria as relações entre esses casos de uso e os atores envolvidos. 
 
-
-- Especificam a visão externa do sistema.
+-Especificam a visão externa do sistema.
 - Descrevem como o sistema é percebido por seus usuários.
-- Descrevem as interações entre os usuários e o sistema.
+- Representam as interações entre os usuários e o sistema.
 
 ![Diagrama de Caso de Uso](img/dcu1.png "Diagrama de Caso de Uso")
 
 **Os casos de uso:**
-- Descrevem como os **usuários interagem com o sistema** (as funcionalidades do sistema)
-- Facilitam a **organização dos requisitos** de um sistema.
-- Dão uma **visão externa** do sistema
-- O conjunto de casos de uso deve ser capaz de comunicar a **funcionalidade** e o **comportamento** do sistema para o cliente.
-- Descrevem **o que** o sistema faz, mas **não** especificam **como** isso deve ser feito.
+- Descrevem como os usuários interagem com o sistema, ou seja, representam as funcionalidades que o sistema oferece a partir da perspectiva do usuário.
+- Facilitam a organização dos requisitos funcionais, permitindo uma compreensão mais clara do que o sistema deve fazer.
+- Proporcionam uma visão externa do sistema, sem revelar os detalhes de implementação.
+- O conjunto de casos de uso deve ser capaz de comunicar a funcionalidade e o comportamento do sistema de forma compreensível para o cliente e para os desenvolvedores.
+- Focam em o que o sistema faz, mas não detalham como essas funcionalidades são implementadas.
+
 
 **7.2 Elementos do diagrama de caso de uso**
 
 7.2.1 **Atores**
 
-- Representam os papéis desempenhados por **elementos externos** ao sistema
-  - Ex: humano (usuário), dispositivo de hardware ou outro sistema (cliente)
-- Elementos que **interagem** com o sistema
+- Representam os papéis desempenhados por elementos externos ao sistema.
+- Ex:ser humano (usuário), dispositivo de hardware ou outro sistema (ex: serviço de pagamento).
+- São os elementos que interagem com o sistema, solicitando ou recebendo algum tipo de serviço.
+
 
 Notação:
 
@@ -441,18 +442,20 @@ Notação:
 **Exemplo: Loja de CDs**
 
 **Identificando os atores**
-- Uma loja de CDs possui discos para venda. Um cliente pode comprar uma quantidade ilimitada de discos para isto ele deve se dirigir à loja.
-- A loja possui um **atendente** cuja função é atender os clientes durante a venda dos discos. A loja também possui um **gerente** cuja função é administrar o estoque para que não faltem discos. Além disso é ele quem dá folga ao atendente, ou seja, ele também atende os clientes durante a venda dos discos.
+- Uma livraria possui diversos livros para venda. Um cliente pode entrar na livraria e escolher os livros que deseja comprar, mas para isso ele deve se dirigir à loja física.
+- A livraria possui um atendente cuja função é registrar as vendas e atender os clientes durante o processo de compra, utilizando o sistema informatizado.
+- A livraria também conta com um gerente, responsável por administrar o estoque, controlar as vendas e conceder autorizações no sistema, como descontos ou promoções. Além disso, ele pode substituir o atendente quando necessário.
 
 ![Identificando os atores](img/dcu_identificando_atores.png "Identificando os atores")
 
 **E o cliente?**
-- Não é ator pois ele **não interage** com o sistema!
+-O cliente não é ator, pois ele não interage diretamente com o sistema. Ele interage com a loja, mas quem utiliza o sistema para registrar as ações são o atendente e o gerente.
 
 **7.2.2 Casos de uso**
+- Uma livraria possui diversos livros para venda. Um cliente pode escolher quantos livros desejar, para isso ele deve se dirigir à livraria ou acessar o sistema online.
+- A livraria possui um atendente cuja função é registrar as vendas no sistema e atender os clientes durante a compra dos livros.
+- A livraria também conta com um gerente, que administra o estoque para garantir que não faltem livros disponíveis. Além disso, o gerente pode autorizar descontos e folgas para o atendente, ou seja, ele também pode atender os clientes durante as vendas.
 
-- Representam **funcionalidades** do sistema (requisitos funcionais).
-- São iniciados por **atores** ou por outros casos de uso.
 
 > **Dica**: nomeie os casos de uso com **verbos** no **infinitivo**.
 
@@ -464,8 +467,9 @@ Notação:
 
 **Identificando os casos de uso**
 
-- Uma loja de CDs possui discos para venda. Um cliente pode comprar uma quantidade ilimitada de discos para isto ele deve se dirigir à loja. A loja possui um atendente cuja função é atender os clientes durante a **venda dos discos**.
-- A loja também possui um gerente cuja função é **administrar o estoque** para que não faltem discos. Além disso é ele quem dá folga ao atendente, ou seja, ele também atende os clientes durante a **venda dos discos**.
+- Uma livraria possui diversos livros para venda. Um cliente pode comprar quantos livros desejar, para isso ele deve se dirigir à livraria ou acessar o sistema online.
+- A livraria possui um atendente cuja função é atender os clientes durante a venda dos livros, registrando as vendas no sistema.
+-A livraria também possui um gerente cuja função é administrar o estoque para garantir que não faltem livros disponíveis. Além disso, ele é responsável por conceder folgas ao atendente e também pode atender os clientes quando necessário.
 
 ![Identificando os casos de uso](img/dcu_identificando_casos_de_uso.png "Identificando os casos de uso")
 
