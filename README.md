@@ -491,9 +491,8 @@ Notação:
 
 **Identificando os relacionamentos de associação**
 
-- Uma loja de CDs possui discos para venda. Um cliente pode comprar uma quantidade ilimitada de discos para isto ele deve se dirigir à loja. A loja possui um _atendente_ cuja função é atender os clientes durante a **venda dos discos**.
-- A loja também possui um _gerente_ cuja função é **administrar o estoque** para que não faltem discos. Além disso é ele quem dá folga ao _atendente_, ou seja, ele também atende os clientes durante a **venda dos discos**.
-
+- A livraria possui livros, que são o produto principal. 
+- A livraria também possui um gerente, cuja função é administrar o estoque para que não faltem livros.
 ![Identificando os relacionamentos de associação](img/dcu_identificando_relacionamentos_de_associacao.png "Identificando os relacionamentos de associação")
 
 **7.2.3.2 Relacionamento de generalização/especialização**
