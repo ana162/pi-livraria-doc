@@ -508,11 +508,9 @@ Os casos de uso se conectam aos atores que os executam.
 **Notação:**
 Representada por uma linha com uma seta fechada e branca (triângulo) apontando do ator filho para o ator pai.
 
-lua
-Copiar
-Editar
 Atendente ----▸ Funcionário  
 Gerente   ----▸ Funcionário
+
 ![Relacionamento de generalização/especialização de atores - notação](img/dcu_relacionamento_de_generalizacao_especializacao_notacao_de_atores.png "Relacionamento de generalização/especialização de atores - notação")
 
 **Exemplo: Livraria
@@ -545,10 +543,6 @@ Pode realizar vendas e emitir nota fiscal
 diversos fluxos alternativos.
 
 Notação:Representada por uma linha com uma seta fechada e branca (triângulo) apontando do caso de uso filho para o caso de uso pai.
-
-lua
-Copiar
-Editar
 Caso de Uso Filho ----▸ Caso de Uso Pai
 
 ![Relacionamento de generalização/especialização de casos de uso - notação](img/dcu_relacionamento_de_generalizacao_especializacao_notacao_de_casos_de_uso.png "Relacionamento de generalização/especialização de casos de uso - notação")
@@ -598,14 +592,11 @@ Essa extensão adiciona um desconto automático ao valor final da compra.
 Descreve o processo padrão para vender livros, incluindo seleção dos livros, pagamento e emissão da nota fiscal.
 **Notação:**
 A extensão é representada por uma seta tracejada com o estereótipo <<extend>> que aponta do caso de uso estendido para o caso de uso base.
-
-pgsql
-Copiar
-Editar
    Aplicar desconto por fidelidade
              <<extend>>
                    ↘
               Realizar venda
+
 ![Relacionamento de dependência (extensão) - notação](img/dcu_relacionamento_de_dependencia_extensao_notacao.png "Relacionamento de dependência (extensão) - notação")
 
 **Exemplo:Livraria
@@ -624,14 +615,12 @@ Editar
 -Um caso de uso pode incluir vários casos de uso para reutilizar funcionalidades.
 **Notação:**
 Representada por uma seta tracejada com o estereótipo <<include>>, apontando do caso de uso que inclui para o caso incluído.
-
-pgsql
-Copiar
-Editar
      Caso de Uso que inclui
             <<include>>
                 ↘
          Caso de Uso incluído
+
+
 ![Relacionamento de dependência (inclusão) - notação](img/dcu_relacionamento_de_dependencia_inclusao_notacao.png "Relacionamento de dependência (inclusão) - notação")
 
 **Exemplo:Livraria
