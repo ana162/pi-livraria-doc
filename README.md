@@ -439,7 +439,7 @@ Notação:
 
 ![Atores Notação](img/dcu_atores_notacao.png "Atores Notação")
 
-**Exemplo: Loja de CDs**
+**Exemplo:Livraria
 
 **Identificando os atores**
 - Uma livraria possui diversos livros para venda. Um cliente pode entrar na livraria e escolher os livros que deseja comprar, mas para isso ele deve se dirigir à loja física.
@@ -456,14 +456,16 @@ Notação:
 - A livraria possui um atendente cuja função é registrar as vendas no sistema e atender os clientes durante a compra dos livros.
 - A livraria também conta com um gerente, que administra o estoque para garantir que não faltem livros disponíveis. Além disso, o gerente pode autorizar descontos e folgas para o atendente, ou seja, ele também pode atender os clientes durante as vendas.
 
-
 > **Dica**: nomeie os casos de uso com **verbos** no **infinitivo**.
+Notação:Os casos de uso são representados por elipses ovais contendo o nome da funcionalidade.
+O nome deve ser claro, curto e em verbo no infinitivo.
+Os casos de uso se conectam aos atores que os executam.
 
-Notação:
+
 
 ![Casos de uso Notação](img/dcu_casos_de_uso_notacao.png "Casos de uso Notação")
 
-**Exemplo: Loja de CDs**
+**Exemplo: Livraria
 
 **Identificando os casos de uso**
 
@@ -477,17 +479,16 @@ Notação:
 
 **7.2.3.1 Relacionamento de associação**
 
-- Indica que um ator **participa** de um caso de uso, ou seja, o ator **interage** (comunica-se) com o caso de uso.
-- É representado por uma **linha sólida**.
-- Um ator pode se relacionar com **um ou mais casos de uso**.
-
+- Indica que um ator participa de um caso de uso, ou seja, o ator interage ou se comunica com o caso de uso.
+- É representado por uma linha sólida que conecta o ator ao caso de uso.
+- Um ator pode estar relacionado a um ou mais casos de uso, conforme suas funções ou interações com o sistema.
 > Dicas:
 > - Não use setas nas linhas de associação.
 > - Associações não representam fluxo de informação.
 
 ![Relacionamento de associação](img/dcu_relacionamento_de_associacao.png "Relacionamento de associação")
 
-**Exemplo: Loja de CDs**
+**Exemplo: Livraria
 
 **Identificando os relacionamentos de associação**
 
@@ -499,52 +500,87 @@ Notação:
 
 **Generalização de atores**
 
-- Quando dois ou mais atores podem se **comunicar com o mesmo conjunto de casos de uso**.
-- Indica que um ator **herda** as características de outro ator.
-– Um filho (herdeiro) pode se comunicar com todos os casos de uso que seu pai se comunica.
-
+-O ator Funcionário representa um papel genérico que pode se comunicar com um conjunto de casos de uso como: fazer login, consultar livros, verificar estoque. 
+-  O ator Atendente herda as características de Funcionário e também pode realizar vendas e emitir nota fiscal.
+–O ator Gerente também herda de Funcionário e possui casos de uso adicionais, como gerar relatórios e autorizar descontos.
 > **Dica:** coloque os herdeiros **embaixo**.
 
 **Notação:**
+Representada por uma linha com uma seta fechada e branca (triângulo) apontando do ator filho para o ator pai.
 
+lua
+Copiar
+Editar
+Atendente ----▸ Funcionário  
+Gerente   ----▸ Funcionário
 ![Relacionamento de generalização/especialização de atores - notação](img/dcu_relacionamento_de_generalizacao_especializacao_notacao_de_atores.png "Relacionamento de generalização/especialização de atores - notação")
 
-**Exemplo: Loja de CDs**
+**Exemplo: Livraria
 
 **Identificando os relacionamentos de generalização/especialização de atores**
+A generalização de atores é usada quando dois ou mais atores compartilham casos de uso em comum.
+Permite organizar e simplificar o diagrama, criando um ator genérico (pai) que representa comportamentos comuns e atores especializados (filhos) que herdam esses comportamentos.
+Os atores filhos também podem possuir casos de uso próprios, além dos herdados.
+Ator pai:
+Funcionário
+Pode realizar ações comuns como:Fazer login
+Consultar catálogo
+Acessar sistema de estoque
+Atores especializados:
+Atendente
+Herda as ações do ator Funcionário
+Pode realizar vendas e emitir nota fiscal
 
 ![Identificando os relacionamentos de generalização/especialização de atores](img/dcu_identificando_relacionamentos_de_generalizacao_especializacao_de_atores.png "Identificando os relacionamentos de generalização/especialização de atores")
 
 **Generalização de casos de uso**
 
-– O caso de uso filho herda o comportamento e o significado do caso de uso pai.
-– O caso de uso filho pode incluir ou sobrescrever o comportamento do caso de uso pai.
-– O caso de uso filho pode substituir o caso de uso pai em qualquer lugar que ele apareça.
+– .O caso de uso filho herda o comportamento e o significado do caso de uso pai.
+–  O caso de uso filho pode adicionar novas etapas ou sobrescrever (alterar) partes do comportamento herdado. 
+–  O caso de uso filho pode ser usado no lugar do caso de uso pai sempre que necessário.
+
+
 
 > **Dica:** deve ser aplicada quando uma condição resulta na definição de
 diversos fluxos alternativos.
 
-Notação:
+Notação:Representada por uma linha com uma seta fechada e branca (triângulo) apontando do caso de uso filho para o caso de uso pai.
+
+lua
+Copiar
+Editar
+Caso de Uso Filho ----▸ Caso de Uso Pai
 
 ![Relacionamento de generalização/especialização de casos de uso - notação](img/dcu_relacionamento_de_generalizacao_especializacao_notacao_de_casos_de_uso.png "Relacionamento de generalização/especialização de casos de uso - notação")
 
-**Exemplo: Loja de CDs**
+**Exemplo: Livraria
 
 **Identificando os relacionamentos de generalização/especialização de casos de uso**
+A generalização/especialização de casos de uso ocorre quando um caso de uso genérico (pai) pode ser dividido em versões mais específicas (filhos), com comportamentos diferentes dependendo de certas condições.
+Os casos de uso filhos herdam o comportamento do pai, podendo acrescentar, modificar ou substituir partes do seu fluxo.
 
 **Novos requisitos:**
 
-- As vendas podem ser **à vista** ou **a prazo**. Em ambos os casos o estoque é
-atualizado e uma nota fiscal, entregue ao consumidor.
-- No caso de uma **venda à vista**, clientes cadastrados na loja e que compram mais de 5 CDs de uma só vez ganham um desconto de 1% para cada ano de cadastro.
-- No caso de uma **venda a prazo**, ela pode ser parcelada em 2 pagamentos com um
-acréscimo de 20%. As vendas a prazo podem ser pagas no **cartão** ou no **boleto**.
-  - Para pagamento com **boleto**, são gerados boletos bancários que são entregues ao cliente e armazenados no sistema para lançamento posterior no caixa.
-  - Para pagamento com **cartão**, os clientes com mais de 10 anos de cadastro na loja ganham o mesmo desconto das compras à vista.
+  - As vendas podem ser feitas à vista ou a prazo.
+  Em ambos os casos, o estoque de livros é atualizado e uma nota fiscal é emitida para o cliente.
+  -Clientes cadastrados na livraria que compram mais de 5 livros de uma só vez ganham um desconto de 1% para cada ano de cadastro.
+  -A venda pode ser parcelada em 2 vezes, com um acréscimo de 20% sobre o valor total.
+  -Boleto: são gerados boletos bancários entregues ao cliente e armazenados no sistema para lançamento posterior no caixa.
+  - Cartão: clientes com mais de 10 anos de cadastro ganham o mesmo desconto da venda à vista.
+
 
 ![Identificando os relacionamentos de generalização/especialização de casos de uso](img/dcu_identificando_relacionamentos_de_generalizacao_especializacao_de_casos_de_uso.png "Identificando os relacionamentos de generalização/especialização de casos de uso")
 
 **Identificando mais relacionamentos de generalização/especialização de casos de uso**
+Caso de uso pai:Realizar venda → representa o processo padrão de venda de livros.
+Casos de uso filhos (especializações):Realizar venda à vista
+Especializa o caso de uso "Realizar venda".
+Aplica desconto por fidelidade (ex: 1% por ano de cadastro).
+Pagamento imediato e emissão de nota fiscal.
+Realizar venda a prazo
+Também especializa "Realizar venda".
+Permite parcelamento em até 2 vezes com acréscimo.
+Pode gerar boleto ou processar cartão.
 
 ![Identificando mais relacionamentos de generalização/especialização de casos de uso](img/dcu_identificando_mais_relacionamentos_de_generalizacao_especializacao_de_casos_de_uso.png "Identificando mais relacionamentos de generalização/especialização de casos de uso")
 
@@ -552,56 +588,67 @@ acréscimo de 20%. As vendas a prazo podem ser pagas no **cartão** ou no **bole
 
 **Extensão**
 
-- Representa uma variação/extensão do comportamento do caso de uso base.
-- O caso de uso estendido só é executado sob certas circunstâncias.
-- Separa partes obrigatórias de partes opcionais.
-  - Partes obrigatórias: caso de uso base.
-  - Partes opcionais: caso de uso estendido.
-- Fatorar comportamentos variantes do sistema (podendo reusar este comportamento
-em outros casos de uso).
-
+- Representa uma variação ou complemento no comportamento de um caso de uso base do sistema da livraria.
+- O caso de uso estendido acontece apenas sob certas condições específicas.
+- Permite separar o que é obrigatório (fluxo principal) do que é opcional ou condicional (comportamentos adicionais).
+  - Caso de uso estendido: Aplicar desconto por fidelidade
+Ocorre somente se o cliente estiver cadastrado há mais de 5 anos e comprando mais de 5 livros.
+Essa extensão adiciona um desconto automático ao valor final da compra.
+- Caso de uso base: Realizar venda
+Descreve o processo padrão para vender livros, incluindo seleção dos livros, pagamento e emissão da nota fiscal.
 **Notação:**
+A extensão é representada por uma seta tracejada com o estereótipo <<extend>> que aponta do caso de uso estendido para o caso de uso base.
 
+pgsql
+Copiar
+Editar
+   Aplicar desconto por fidelidade
+             <<extend>>
+                   ↘
+              Realizar venda
 ![Relacionamento de dependência (extensão) - notação](img/dcu_relacionamento_de_dependencia_extensao_notacao.png "Relacionamento de dependência (extensão) - notação")
 
-**Exemplo: Loja de CDs**
+**Exemplo:Livraria
 
 **Identificando os relacionamentos de dependência (extensão)**
 
 **Novos requisitos:**
-- No caso de uma venda à vista, clientes cadastrados na loja e que compram mais
-de 5 CDs de uma só vez ganham um **desconto** de 1% para cada ano de cadastro.
-- No caso de uma venda a prazo...
-  - ...Para pagamento com cartão, os clientes com mais de 10 anos de cadastro na loja ganham o mesmo **desconto** das compras à vista.
+- No caso de uma venda à vista, clientes cadastrados na livraria que compram mais de 5 livros de uma só vez ganham um desconto de 1% para cada ano de cadastro.
+- No caso de uma venda a prazo: Para pagamento com cartão, os clientes com mais de 10 anos de cadastro na livraria ganham o mesmo desconto das compras à vista.
 
 ![Identificando os relacionamentos de dependência (extensão)](img/dcu_identificando_relacionamentos_de_dependencia_extensao.png "Identificando os relacionamentos de dependência (extensão)")
 
 **Inclusão**
 
-- Evita repetição ao fatorar uma atividade
-comum a dois ou mais casos de uso.
-- Um caso de uso pode incluir vários casos de uso.
-
+- Evita repetição ao fatorar uma atividade comum a dois ou mais casos de uso.
+-Um caso de uso pode incluir vários casos de uso para reutilizar funcionalidades.
 **Notação:**
+Representada por uma seta tracejada com o estereótipo <<include>>, apontando do caso de uso que inclui para o caso incluído.
 
+pgsql
+Copiar
+Editar
+     Caso de Uso que inclui
+            <<include>>
+                ↘
+         Caso de Uso incluído
 ![Relacionamento de dependência (inclusão) - notação](img/dcu_relacionamento_de_dependencia_inclusao_notacao.png "Relacionamento de dependência (inclusão) - notação")
 
-**Exemplo: Loja de CDs**
+**Exemplo:Livraria
 
 **Novos requisitos:**
-Para efetuar vendas ou administrar estoque, atendentes e gerentes terão que **validar** suas respectivas senhas de
-acesso ao sistema.
+Para efetuar vendas ou administrar o estoque, atendentes e gerentes devem validar suas senhas de acesso ao sistema antes de realizar essas ações.
 
 ![Identificando os relacionamentos de dependência (inclusão)](img/dcu_identificando_relacionamentos_de_dependencia_inclusao.png "Identificando os relacionamentos de dependência (inclusão)")
 
 **7.2.4 Fronteira do sistema**
 
-- Elemento opcional (mas essencial para um bom
-entendimento).
-- Serve para definir a área de atuação do sistema, ou seja, seus limites.
-
+-A fronteira do sistema é um elemento opcional, mas essencial para a compreensão do diagrama.
+- Serve para definir os limites do sistema, ou seja, o que está dentro (o que o sistema faz) e o que está fora (atores que interagem com o sistema).
 **Identificando a fronteira do sistema**
-
+A fronteira do sistema pode ser nomeada, por exemplo, como "Sistema de Vendas da Livraria".
+Dentro da fronteira ficam os casos de uso, como realizar venda, atualizar estoque, emitir nota fiscal, validar senha.
+Fora da fronteira ficam os atores, como Cliente, Atendente e Gerente, que interagem com essas funcionalidades.
 ![Identificando a fronteira do sistema](img/dcu_identificando_a_fronteira_do_sistema.png "Identificando a fronteira do sistema")
 
 ---
