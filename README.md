@@ -266,7 +266,6 @@ Relatório de estoque: lista os livros disponíveis, os que estão com baixo est
 Notificação de confirmação de pedido: mensagem enviada ao cliente confirmando a realização do pedido, com status de entrega.
 Painel de controle do administrador: exibe estatísticas e informações gerenciais, como volume de vendas, livros mais vendidos, desempenho por categoria.
 
-
 **Exemplos de saídas:**
 - "Relatório de compras por cliente”
 - " Relatório de vendas”.
@@ -276,8 +275,18 @@ Todos esses podem ser consideradas saídas, pois usam informações de entradas 
 negócio. Lembre-se que, diferentemente das entradas e processos, aqui os dados necessários devem ser os que a tela exibirá.
 
 **5.4.7 Exemplo de organização dos requisitos funcionais**
+| **Entrada**                                           | **Processo**                                         | **Saída**                                  |
+| ----------------------------------------------------- | ---------------------------------------------------- | ------------------------------------------ |
+| Dados do cliente (nome, CPF, endereço, etc.)          | Cadastrar novo cliente                               | Confirmação de cadastro do cliente         |
+| Informações do livro (título, autor, preço, etc.)     | Cadastrar livro no sistema                           | Livro disponível no catálogo               |
+| Login (usuário e senha)                               | Verificar credenciais de acesso                      | Acesso concedido ou mensagem de erro       |
+| Código do livro e quantidade                          | Realizar venda                                       | Recibo da venda e atualização do estoque   |
+| Termo de busca (palavra-chave ou categoria)           | Buscar livros no catálogo                            | Lista de livros encontrados                |
+| Dados do pedido (itens, endereço, forma de pagamento) | Processar pedido de compra                           | Pedido confirmado com número de rastreio   |
+| Código do pedido                                      | Consultar status do pedido                           | Status atual do pedido exibido             |
+| Requisição de relatório de vendas                     | Gerar relatório de vendas por período                | Arquivo de relatório com dados organizados |
+| Solicitação de atualização de estoque                 | Atualizar quantidade em estoque de determinado livro | Estoque atualizado com nova quantidade     |
 
-(_A seguir, um exemplo de organização de requisitos funcionais, com entradas, processos e saídas._)
 
 **Entradas:**
 
@@ -368,15 +377,31 @@ O sistema deve ser capaz de integrar com APIs de terceiros para funcionalidades 
 10. **Conformidade**: O sistema deve cumprir todas as leis e regulamentos aplicáveis, como leis de proteção de dados (LGPD, GDPR) e leis de comércio eletrônico.
 O sistema deve fornecer informações claras sobre termos e condições, política de privacidade e informações de contato.
 **6.4 Exemplo de organização dos requisitos não funcionais**
-
-(_A seguir, um exemplo de organização de requisitos não funcionais._)
+| **Categoria**        | **Requisito Não Funcional**                                                                                                |
+| -------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| **Desempenho**       | O sistema deve ser capaz de processar uma venda em até 2 segundos.                                                         |
+| **Disponibilidade**  | O sistema deve estar disponível para acesso 24 horas por dia, 7 dias por semana.                                           |
+| **Segurança**        | As senhas dos usuários devem ser armazenadas de forma criptografada.                                                       |
+| **Usabilidade**      | A interface deve ser intuitiva e permitir que novos usuários façam sua primeira compra em até 5 minutos.                   |
+| **Portabilidade**    | O sistema deve ser compatível com os navegadores Chrome, Firefox e Safari.                                                 |
+| **Confiabilidade**   | O sistema deve apresentar no máximo 1 falha crítica a cada 100 mil transações.                                             |
+| **Manutenibilidade** | O código do sistema deve ser modularizado e documentado para facilitar futuras manutenções.                                |
+| **Escalabilidade**   | O sistema deve suportar o aumento de até 10 vezes no número de usuários simultâneos sem perda significativa de desempenho. |
 
 **Requisitos não funcionais:**
 
-- **R.N.F. 01 - Nome do requisito não funcional:** descrição do requisito.
-- **R.N.F. 02 - Nome do requisito não funcional:** descrição do requisito.
-
+- R.N.F. 01 – Desempenho: O sistema deve ser capaz de processar uma venda em até 2 segundos.
+- R.N.F. 02 – Disponibilidade: O sistema deve estar disponível 24 horas por dia, 7 dias por semana.
 **Exemplos de requisitos não funcionais:**
+R.N.F. 01 – Desempenho: O sistema deve processar cada transação de venda em até 2 segundos.
+R.N.F. 02 – Disponibilidade: O sistema deve estar acessível 24 horas por dia, 7 dias por semana.
+R.N.F. 03 – Segurança: As senhas devem ser criptografadas e o acesso deve ser feito via conexão segura (HTTPS).
+R.N.F. 04 – Usabilidade: A interface do sistema deve ser simples e intuitiva, permitindo navegação sem necessidade de treinamento prévio.
+R.N.F. 05 – Confiabilidade: O sistema deve manter a integridade dos dados mesmo em caso de falhas de energia ou conexão.
+R.N.F. 06 – Escalabilidade: O sistema deve comportar aumento de usuários sem perda significativa de desempenho.
+R.N.F. 07 – Portabilidade: O sistema deve funcionar em diferentes navegadores e dispositivos móveis.
+R.N.F. 08 – Manutenibilidade: O código-fonte do sistema deve ser modular e documentado, facilitando atualizações e correções futuras.
+
 
 **Sistema de livraria**:
 - **R.N.F. 01 - Navegador homologado:** O sistema deve funcionar corretamente nos navegadores Google Chrome e Mozilla Firefox.
@@ -410,7 +435,7 @@ Eles ajudam a garantir que o sistema atenda às necessidades do usuário e seja 
 # 7. Diagrama de Caso de Uso
 
 **7.1 Introdução**
-ara uma livraria, um diagrama de caso de uso detalharia as interações entre os usuários (clientes, bibliotecários, etc.) e o sistema, mostrando as funcionalidades como buscar livros, verificar disponibilidade, realizar empréstimos, devolver livros, adicionar livros ao catálogo e remover livros. O diagrama também mostraria as relações entre esses casos de uso e os atores envolvidos. 
+para uma livraria, um diagrama de caso de uso detalharia as interações entre os usuários (clientes, bibliotecários, etc.) e o sistema, mostrando as funcionalidades como buscar livros, verificar disponibilidade, realizar empréstimos, devolver livros, adicionar livros ao catálogo e remover livros. O diagrama também mostraria as relações entre esses casos de uso e os atores envolvidos. 
 
 -Especificam a visão externa do sistema.
 - Descrevem como o sistema é percebido por seus usuários.
@@ -433,9 +458,18 @@ ara uma livraria, um diagrama de caso de uso detalharia as interações entre os
 - Representam os papéis desempenhados por elementos externos ao sistema.
 - Ex:ser humano (usuário), dispositivo de hardware ou outro sistema (ex: serviço de pagamento).
 - São os elementos que interagem com o sistema, solicitando ou recebendo algum tipo de serviço.
-
+Os atores são representados por um boneco (stickman).
+O nome do ator deve aparecer abaixo da figura, em letras legíveis.
 
 Notação:
+     _______
+    |       |
+    | Cliente |
+    |_______|
+        |
+      \ O /
+        |
+       / \
 
 ![Atores Notação](img/dcu_atores_notacao.png "Atores Notação")
 
@@ -476,6 +510,12 @@ Os casos de uso se conectam aos atores que os executam.
 ![Identificando os casos de uso](img/dcu_identificando_casos_de_uso.png "Identificando os casos de uso")
 
 **7.2.3 Relacionamentos**
+Os relacionamentos em um Diagrama de Caso de Uso representam como os atores interagem com os casos de uso. Eles também mostram a dependência entre os casos de uso (inclusão, extensão e generalização).
+| **Ator**  | **Casos de Uso**                                                                 |
+| --------- | -------------------------------------------------------------------------------- |
+| Cliente   | Comprar livros (presencial ou online)                                            |
+| Atendente | Registrar venda de livros                                                        |
+| Gerente   | Administrar estoque<br>Conceder folga ao atendente<br>Atender cliente (opcional) |
 
 **7.2.3.1 Relacionamento de associação**
 
@@ -497,7 +537,23 @@ Os casos de uso se conectam aos atores que os executam.
 ![Identificando os relacionamentos de associação](img/dcu_identificando_relacionamentos_de_associacao.png "Identificando os relacionamentos de associação")
 
 **7.2.3.2 Relacionamento de generalização/especialização**
+O relacionamento de generalização/especialização é utilizado quando dois ou mais atores ou casos de uso compartilham comportamentos semelhantes, mas alguns possuem funcionalidades específicas adicionais.
+Nesse relacionamento:
+Um ator mais genérico (pai) define comportamentos comuns.
+Os atores mais específicos (filhos) herdam esses comportamentos e podem acrescentar outros.
+Notação: seta com ponta aberta e linha contínua, apontando do ator/caso de uso mais específico para o mais geral.
+Exemplo aplicado à livraria:
+O Gerente é uma especialização do Atendente, pois:
+Pode fazer tudo o que o atendente faz (registrar venda, atender cliente);
+Além disso, pode administrar o estoque e conceder folgas.
+📌 Generalização entre atores:
+          [Atendente]
+              ▲
+              |
+           [Gerente]
 
+Ou graficamente em UML:
+Gerente → Atendente (seta de generalização)
 **Generalização de atores**
 
 -O ator Funcionário representa um papel genérico que pode se comunicar com um conjunto de casos de uso como: fazer login, consultar livros, verificar estoque. 
@@ -506,10 +562,11 @@ Os casos de uso se conectam aos atores que os executam.
 > **Dica:** coloque os herdeiros **embaixo**.
 
 **Notação:**
-Representada por uma linha com uma seta fechada e branca (triângulo) apontando do ator filho para o ator pai.
-
-Atendente ----▸ Funcionário  
-Gerente   ----▸ Funcionário
+Representada por uma seta com ponta branca (triângulo vazio) apontando do ator mais específico (filho) para o ator mais genérico (pai).
+Exemplo UML textual:
+[Atendente] ----▸ [Funcionário]
+[Gerente]   ----▸ [Funcionário]
+ Ambos herdam os casos de uso do ator Funcionário, mas também possuem funcionalidades próprias.
 
 ![Relacionamento de generalização/especialização de atores - notação](img/dcu_relacionamento_de_generalizacao_especializacao_notacao_de_atores.png "Relacionamento de generalização/especialização de atores - notação")
 
@@ -537,13 +594,13 @@ Pode realizar vendas e emitir nota fiscal
 –  O caso de uso filho pode adicionar novas etapas ou sobrescrever (alterar) partes do comportamento herdado. 
 –  O caso de uso filho pode ser usado no lugar do caso de uso pai sempre que necessário.
 
-
-
 > **Dica:** deve ser aplicada quando uma condição resulta na definição de
 diversos fluxos alternativos.
 
-Notação:Representada por uma linha com uma seta fechada e branca (triângulo) apontando do caso de uso filho para o caso de uso pai.
-Caso de Uso Filho ----▸ Caso de Uso Pai
+Notação:Representada por uma linha contínua com uma seta branca (triângulo vazio) apontando do caso de uso filho para o caso de uso pai.
+Exemplo de notação UML:
+[Venda Presencial] --------▸ [Realizar Venda]
+[Venda Online]     --------▸ [Realizar Venda]
 
 ![Relacionamento de generalização/especialização de casos de uso - notação](img/dcu_relacionamento_de_generalizacao_especializacao_notacao_de_casos_de_uso.png "Relacionamento de generalização/especialização de casos de uso - notação")
 
@@ -579,29 +636,37 @@ Pode gerar boleto ou processar cartão.
 ![Identificando mais relacionamentos de generalização/especialização de casos de uso](img/dcu_identificando_mais_relacionamentos_de_generalizacao_especializacao_de_casos_de_uso.png "Identificando mais relacionamentos de generalização/especialização de casos de uso")
 
 **7.2.3.3 Relacionamento de dependência**
-
+No Diagrama de Caso de Uso, os relacionamentos de dependência indicam como um caso de uso depende de outro para complementar ou reutilizar funcionalidades. Os principais tipos são:
+Extensão (<<extend>>):
+Representa uma variação ou complemento no comportamento de um caso de uso base.
+O caso de uso estendido acontece apenas sob condições específicas.
+Permite separar o que é obrigatório (fluxo principal) do que é opcional ou condicional (comportamentos adicionais).
+Exemplo: Caso de uso base: Realizar venda
+Caso de uso estendido: Aplicar desconto por fidelidade (aplica-se somente se o cliente atender a critérios específicos).
+Notação: Linha tracejada com seta aberta apontando do caso de uso estendido para o caso base, com o rótulo <<extend>>.
 **Extensão**
 
 - Representa uma variação ou complemento no comportamento de um caso de uso base do sistema da livraria.
 - O caso de uso estendido acontece apenas sob certas condições específicas.
 - Permite separar o que é obrigatório (fluxo principal) do que é opcional ou condicional (comportamentos adicionais).
-  - Caso de uso estendido: Aplicar desconto por fidelidade
+ - Caso de uso estendido: Aplicar desconto por fidelidade
 Ocorre somente se o cliente estiver cadastrado há mais de 5 anos e comprando mais de 5 livros.
 Essa extensão adiciona um desconto automático ao valor final da compra.
 - Caso de uso base: Realizar venda
 Descreve o processo padrão para vender livros, incluindo seleção dos livros, pagamento e emissão da nota fiscal.
-**Notação:**
-A extensão é representada por uma seta tracejada com o estereótipo <<extend>> que aponta do caso de uso estendido para o caso de uso base.
-   Aplicar desconto por fidelidade
-             <<extend>>
-                   ↘
-              Realizar venda
+**Notação:** Representada por uma linha tracejada com uma seta aberta (ponta de flecha) apontando do caso de uso estendido para o caso de uso base.
+A linha é rotulada com o estereótipo <<extend>>.
+Exemplo visual (UML):
+[Aplicar desconto por fidelidade] -- - - -▸ <<extend>> -- - - - [Realizar venda]
+
 
 ![Relacionamento de dependência (extensão) - notação](img/dcu_relacionamento_de_dependencia_extensao_notacao.png "Relacionamento de dependência (extensão) - notação")
 
 **Exemplo:Livraria
 
 **Identificando os relacionamentos de dependência (extensão)**
+Representada por uma linha tracejada com uma seta aberta apontando do caso de uso estendido para o caso de uso base.
+A linha é identificada com o estereótipo <<extend>>.
 
 **Novos requisitos:**
 - No caso de uma venda à vista, clientes cadastrados na livraria que compram mais de 5 livros de uma só vez ganham um desconto de 1% para cada ano de cadastro.
@@ -610,16 +675,11 @@ A extensão é representada por uma seta tracejada com o estereótipo <<extend>>
 ![Identificando os relacionamentos de dependência (extensão)](img/dcu_identificando_relacionamentos_de_dependencia_extensao.png "Identificando os relacionamentos de dependência (extensão)")
 
 **Inclusão**
-
 - Evita repetição ao fatorar uma atividade comum a dois ou mais casos de uso.
 -Um caso de uso pode incluir vários casos de uso para reutilizar funcionalidades.
-**Notação:**
-Representada por uma seta tracejada com o estereótipo <<include>>, apontando do caso de uso que inclui para o caso incluído.
-     Caso de Uso que inclui
-            <<include>>
-                ↘
-         Caso de Uso incluído
 
+**Notação:** Representada por uma linha tracejada com uma seta aberta apontando do caso de uso que inclui para o caso de uso que é incluído.
+A linha é identificada com o estereótipo <<include>>.
 
 ![Relacionamento de dependência (inclusão) - notação](img/dcu_relacionamento_de_dependencia_inclusao_notacao.png "Relacionamento de dependência (inclusão) - notação")
 
