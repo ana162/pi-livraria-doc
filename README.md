@@ -316,10 +316,8 @@ negócio. Lembre-se que, diferentemente das entradas e processos, aqui os dados 
   - **Dados necessários:** intervalo de datas, filtros por categoria, atendente ou título.
   - **Usuários:**administrador.
 # 6. Requisitos não funcionais
-
-Requisitos não funcionais (**RNFs**) são as restrições impostas a um sistema que definem seus atributos de qualidade.
-
-Eles geralmente são indicados por adjetivos como **segurança**, **desempenho** e **escalabilidade**.
+Requisitos não funcionais (RNFs) são as restrições impostas ao sistema da livraria que definem seus atributos de qualidade.
+Eles geralmente são expressos por adjetivos como seguro, rápido, escalável, entre outros. No contexto de uma livraria, esses requisitos garantem que o sistema funcione de forma eficiente, confiável e segura para clientes e funcionários.
 
 **6.1 Categorias de requisitos não funcionais**
 Requisitos não funcionais (RNFs) definem as características de qualidade e restrições de um sistema, enquanto os requisitos funcionais descrevem o que o sistema faz. Para uma livraria, RNFs podem incluir critérios de desempenho (como tempo de resposta ao buscar um livro), segurança (proteção de dados do cliente), confiabilidade (disponibilidade do sistema), usabilidade (facilidade de uso da interface) e manutenibilidade (facilidade de atualização). 
@@ -449,7 +447,6 @@ Eles ajudam a garantir que o sistema atenda às necessidades do usuário e seja 
 **7.1 Introdução**
 Para uma livraria, um diagrama de caso de uso detalha as interações entre os usuários (clientes, atendentes, gerentes, etc.) e o sistema. Ele mostra funcionalidades como buscar livros, verificar disponibilidade, realizar vendas, registrar clientes, adicionar livros ao catálogo e gerar relatórios. O diagrama também evidencia as relações entre os casos de uso e os atores envolvidos, permitindo uma visão clara das funcionalidades oferecidas.
 
-
 -Especificam a visão externa do sistema.
 - Descrevem como o sistema é percebido por seus usuários.
 - Representam as interações entre os usuários e o sistema.
@@ -462,7 +459,6 @@ Para uma livraria, um diagrama de caso de uso detalha as interações entre os u
 - Proporcionam uma visão externa do sistema, sem revelar os detalhes de implementação.
 - O conjunto de casos de uso deve ser capaz de comunicar a funcionalidade e o comportamento do sistema de forma compreensível para o cliente e para os desenvolvedores.
 - Focam em o que o sistema faz, mas não detalham como essas funcionalidades são implementadas.
-
 
 **7.2 Elementos do diagrama de caso de uso**
 Os elementos de um diagrama de caso de uso ajudam a representar as funcionalidades do sistema e a forma como diferentes usuários interagem com ele. Abaixo, estão os principais componentes utilizados nesse tipo de diagrama:
