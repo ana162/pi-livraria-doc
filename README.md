@@ -433,9 +433,22 @@ Requisitos não funcionais são cruciais para garantir que o sistema atenda às 
 Eles ajudam a garantir que o sistema atenda às necessidades do usuário e seja capaz de funcionar como pretendido.
 
 # 7. Diagrama de Caso de Uso
+| **Caso de Uso**             | **Descrição**                                              | **Atores Envolvidos** |
+| --------------------------- | ---------------------------------------------------------- | --------------------- |
+| Cadastrar Cliente           | Registrar os dados de um novo cliente.                     | Atendente             |
+| Consultar Catálogo          | Buscar e visualizar livros disponíveis na livraria.        | Cliente, Atendente    |
+| Adicionar Livro ao Carrinho | Escolher livros para realizar a compra.                    | Cliente               |
+| Realizar Venda              | Efetuar a venda dos livros selecionados.                   | Cliente, Atendente    |
+| Processar Pagamento         | Efetuar e validar o pagamento da compra.                   | Sistema de Pagamento  |
+| Emitir Nota Fiscal          | Gerar comprovante da compra.                               | Sistema               |
+| Gerenciar Estoque           | Adicionar ou remover livros do estoque.                    | Atendente, Gerente    |
+| Cadastrar Novo Livro        | Inserir um novo livro no catálogo da livraria.             | Atendente, Gerente    |
+| Gerar Relatórios de Venda   | Obter estatísticas e relatórios de vendas e movimentações. | Gerente               |
+| Validar Senha de Acesso     | Verificar a identidade para uso do sistema.                | Atendente, Gerente    |
 
 **7.1 Introdução**
-para uma livraria, um diagrama de caso de uso detalharia as interações entre os usuários (clientes, bibliotecários, etc.) e o sistema, mostrando as funcionalidades como buscar livros, verificar disponibilidade, realizar empréstimos, devolver livros, adicionar livros ao catálogo e remover livros. O diagrama também mostraria as relações entre esses casos de uso e os atores envolvidos. 
+Para uma livraria, um diagrama de caso de uso detalha as interações entre os usuários (clientes, atendentes, gerentes, etc.) e o sistema. Ele mostra funcionalidades como buscar livros, verificar disponibilidade, realizar vendas, registrar clientes, adicionar livros ao catálogo e gerar relatórios. O diagrama também evidencia as relações entre os casos de uso e os atores envolvidos, permitindo uma visão clara das funcionalidades oferecidas.
+
 
 -Especificam a visão externa do sistema.
 - Descrevem como o sistema é percebido por seus usuários.
@@ -452,7 +465,7 @@ para uma livraria, um diagrama de caso de uso detalharia as interações entre o
 
 
 **7.2 Elementos do diagrama de caso de uso**
-
+Os elementos de um diagrama de caso de uso ajudam a representar as funcionalidades do sistema e a forma como diferentes usuários interagem com ele. Abaixo, estão os principais componentes utilizados nesse tipo de diagrama:
 7.2.1 **Atores**
 
 - Representam os papéis desempenhados por elementos externos ao sistema.
