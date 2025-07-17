@@ -710,6 +710,3 @@ Fora da fronteira ficam os atores, como Cliente, Atendente e Gerente, que intera
 ![Identificando a fronteira do sistema](img/dcu_identificando_a_fronteira_do_sistema.png "Identificando a fronteira do sistema")
 
 ---
-
-
-
