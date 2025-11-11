@@ -7,11 +7,9 @@ Professor: [Marco André Mendes](github.com/marcoandre)
 Equipe:
 - [Ana Heloiza](github.com/ana162)
 
-Links do projeto:
-(*Coloque aqui os links para a documentação do projeto e os repositórios e plubicação do backend e frontend.*)
--   [Documentação (esse documento)](github.com/marcoandre/pi-modelo)
--   Backend: [Repositório](github.com/marcoandre/pi-backend) e [Publicação](https://pi-backend.herokuapp.com/)
--   Frontend: [Repositório](github.com/marcoandre/pi-frontend) e [Publicação](https://pi-frontend.herokuapp.com/)
+**Links do projeto:**
+-   [Documentação (esse documento)](github.com/ana162/pi-livraria-doc/)
+-   Backend: [Repositório](https://github.com/ana162/livraria) e [Publicação](https://livraria-qc2t.onrender.com/)
 
 # 1. Desenvolvimento
 terão quatro tipos de livros romance,suspense,ação e comédia 
