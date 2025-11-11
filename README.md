@@ -9,7 +9,7 @@ Equipe:
 
 **Links do projeto:**
 -   [Documentação (esse documento)](github.com/ana162/pi-livraria-doc/)
--   Backend: [Repositório](https://github.com/ana162/livraria) e [Publicação](https://livraria-qc2t.onrender.com/)
+-   Backend: [Repositório](https://github.com/ana162/livraria) e [Publicação](https://livraria-qc2t.onrender.com/api/swagger/)
 
 # 1. Desenvolvimento
 terão quatro tipos de livros romance,suspense,ação e comédia 
